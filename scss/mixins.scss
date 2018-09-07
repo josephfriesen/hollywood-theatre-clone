@@ -20,3 +20,11 @@
     text-decoration: none;
   }
 }
+
+@mixin grey-links($font-size) {
+  font-size: $font-size;
+  color: #231f20;
+  &:hover {
+    text-decoration: none;
+  }
+}

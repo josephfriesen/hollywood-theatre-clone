@@ -49,7 +49,44 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 15px; }
+  padding: 15px;
+  position: relative; }
+
+.drop-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 63px;
+  width: auto; }
+
+.drop-nav-item {
+  width: 200px;
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid #231f20; }
+  .drop-nav-item a {
+    font-size: 16px;
+    color: #231f20; }
+    .drop-nav-item a:hover {
+      text-decoration: none; }
+  .drop-nav-item:hover {
+    background-color: #e6e6e6; }
+    .drop-nav-item:hover a {
+      color: #759697; }
 
 .shop-row {
   display: -webkit-box;

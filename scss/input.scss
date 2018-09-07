@@ -34,6 +34,33 @@
 .nav-item {
   @include flexbox(column, center, center);
   padding: 15px;
+  position: relative;
+}
+
+.drop-nav {
+  @include flexbox(column, flex-start, center);
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 63px;
+  width: auto;
+}
+
+.drop-nav-item {
+  width: 200px;
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid #231f20;
+  a {
+    @include grey-links(16px);
+  }
+  &:hover {
+    background-color: darken(white, 10%);
+    a {
+      color: #759697;
+    }
+  }
 }
 
 .shop-row {
