@@ -12,3 +12,11 @@
     text-decoration: none;
   }
 }
+
+@mixin alt-links($font-size) {
+  font-size: $font-size;
+  color: #cf815d;
+  &:hover {
+    text-decoration: none;
+  }
+}

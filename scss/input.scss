@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-// Top navigation top-bar
+// Top navigation bar
 
 .top-bar {
   background-color: black;
@@ -110,7 +110,8 @@
 
 .info-boxes-row {
   @include flexbox(row, space-between, center);
-  margin: 20px 30px;
+  flex-wrap: wrap;
+  margin: 20px 30px 60px 30px;
   width: 90%;
 }
 
@@ -137,4 +138,57 @@
   a {
     @include plain-links(36px);
   }
+}
+
+// Page footer
+
+.bottom-bar {
+  background-color: #231f20;
+  color: white;
+  hr {
+    border-color: white;
+    width: 100%;
+    margin: 1px;
+  }
+  a {
+    @include alt-links(14px);
+  }
+  h1 {
+    font-size: 14px;
+    color: #b4b4b4;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+
+.bottom-flexbox {
+  @include flexbox(column, flex-start, center);
+  width: 100%;
+}
+
+.bottom-row {
+  @include flexbox(row, space-between, flex-start);
+  width: 100%;
+}
+
+.bottom-header {
+  height: 150px;
+  width: 100%;
+}
+
+#address-box {
+  @include flexbox(column, flex-end, center);
+  height: 100%;
+  p {
+    margin: 0;
+  }
+}
+
+.list-row {
+  margin-top: 20px;
+}
+
+.list-box {
+  margin: 10px;
 }
