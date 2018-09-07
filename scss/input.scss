@@ -107,3 +107,34 @@
     @include plain-links(36px);
   }
 }
+
+.info-boxes-row {
+  @include flexbox(row, space-between, center);
+  margin: 20px 30px;
+  width: 90%;
+}
+
+.info-box {
+  @include flexbox(column, space-between, center);
+  align-content: space-between;
+  height: 260px;
+  width: 260px;
+  background-color: black;
+  .info-box-img {
+    height: 260px;
+    width: 260px;
+    overflow: hidden;
+  }
+  .info-box-link {
+    @include flexbox(row, center, center);
+    height: 80px;
+    width: 260px;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  a {
+    @include plain-links(36px);
+  }
+}
