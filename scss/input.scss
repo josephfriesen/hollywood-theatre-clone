@@ -90,5 +90,20 @@
 }
 
 .slideshow {
+  @include flexbox(row, space-between, center);
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  margin-top: 50px;
+  color: white;
+}
 
+.arrow {
+  @include flexbox(column, center, center);
+  background-color: #759697;
+  width: 50px;
+  height: 100%;
+  a {
+    @include plain-links(36px);
+  }
 }
