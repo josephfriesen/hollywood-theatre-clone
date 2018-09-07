@@ -19,7 +19,47 @@
 }
 
 .top-nav {
+  @include flexbox(row, flex-start, center);
+  width: $wrapper-width-lg;
+  height: 69px;
   margin-left: 0;
+  a {
+    @include plain-links(18px);
+    &:hover {
+      color: #b8cacb;
+    }
+  }
+}
+
+.nav-item {
+  @include flexbox(column, center, center);
+  padding: 15px;
+}
+
+.shop-row {
+  @include flexbox(row-reverse, flex-end, center);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+}
+
+.shop-box {
+  @include flexbox(column, center, center);
+  color: white;
+  padding: 20px;
+  height: 100%;
+  a {
+    @include alt-links(18px);
+  }
+}
+
+#donate {
+  background-color: #9b200d;
+  a {
+    @include plain-links (18px);
+  }
 }
 
 // Logo header
