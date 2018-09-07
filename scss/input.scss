@@ -3,7 +3,7 @@
 
 // Style rules to contain content within fixed width, the top nav bar, main content and footer will all be contained in a wrapper div
 .wrapper {
-  width: 970px;
+  width: $wrapper-width-lg;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -47,7 +47,7 @@
   @include flexbox(column, center, center);
 }
 
-.showtimes-panel {
+.schedule-toggle-panel {
   @include flexbox(row, space-between, center);
   background-color: black;
   height: 88px;
@@ -55,7 +55,7 @@
   border-bottom: 10px solid black;
 }
 
-.showtimes-box {
+.schedule-toggle-box {
   @include flexbox(row, center, center);
   width: 50%;
   margin: 10px;
@@ -69,4 +69,26 @@
   a {
     color: black;
   }
+}
+
+.movie-boxes-container {
+  @include flexbox(row, space-between, center);
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.movie-box {
+  height: 435px;
+  width: (95% / 3);
+  background-color: black;
+  color: white;
+  img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.slideshow {
+
 }
