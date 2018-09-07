@@ -352,6 +352,21 @@
     .all-showtimes a:hover {
       text-decoration: none; }
 
+#the-bronx-warriors {
+  position: relative; }
+
+.program-ribbon {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: #cf815d;
+  padding: 3px 6px; }
+  .program-ribbon a {
+    font-size: 14px;
+    color: white; }
+    .program-ribbon a:hover {
+      text-decoration: none; }
+
 .slideshow {
   display: -webkit-box;
   display: -ms-flexbox;

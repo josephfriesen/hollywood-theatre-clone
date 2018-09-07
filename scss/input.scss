@@ -180,6 +180,21 @@
   }
 }
 
+#the-bronx-warriors {
+  position: relative;
+}
+
+.program-ribbon {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: #cf815d;
+  padding: 3px 6px;
+  a {
+    @include plain-links(14px);
+  }
+}
+
 .slideshow {
   @include flexbox(row, space-between, center);
   height: 300px;
