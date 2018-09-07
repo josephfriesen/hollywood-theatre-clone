@@ -119,13 +119,64 @@
 }
 
 .movie-box {
+  @include flexbox(column, flex-start, center);
   height: 435px;
   width: (95% / 3);
   background-color: black;
   color: white;
+}
+
+.title-box {
+  @include flexbox(column, center, center);
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  a {
+    @include plain-links(24px);
+  }
+}
+.img-box {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
   img {
     width: 100%;
     height: 200px;
+  }
+}
+.showtime-box {
+  @include flexbox(column, space-around, center);
+  height: 135px;
+  width: 100%;
+}
+
+.date-bar {
+  @include flexbox(row, space-between, center);
+  width: 60%;
+  font-size: 18px;
+}
+
+.showtimes-bar {
+  @include flexbox(row, center, center);
+}
+
+.showtime-button {
+  @include flexbox(column, center, center);
+  width: 80px;
+  height: 26px;
+  background-color: white;
+  padding: 3px 0;
+  margin: 2px;
+  border: 2px solid #cf815d;
+  a {
+    @include alt-links(12px);
+  }
+}
+
+.all-showtimes {
+  @include flexbox(row, center, center);
+  a {
+    @include alt-links(18px);
   }
 }
 
