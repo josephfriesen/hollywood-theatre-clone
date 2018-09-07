@@ -1,6 +1,15 @@
 @import "variables";
 @import "mixins";
 
+@font-face {
+  font-family: workGodDamnit;
+  src: url("../fonts/metropolis/Metropolis-Thin.otf");
+}
+
+body {
+  font-family: workGodDamnit;
+}
+
 // Style rules to contain content within fixed width, the top nav bar, main content and footer will all be contained in a wrapper div
 .wrapper {
   width: $wrapper-width-lg;
