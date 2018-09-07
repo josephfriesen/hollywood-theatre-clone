@@ -1,9 +1,9 @@
 @font-face {
-  font-family: workGodDamnit;
+  font-family: Metropolis;
   src: url("../fonts/metropolis/Metropolis-Thin.otf"); }
 
 body {
-  font-family: workGodDamnit; }
+  font-family: Metropolis; }
 
 .wrapper {
   width: 1170px;
@@ -81,12 +81,12 @@ body {
   width: auto; }
 
 .drop-nav-item {
-  width: 200px;
+  width: 250px;
   background-color: white;
   padding: 10px 20px;
   border: 1px solid #231f20; }
   .drop-nav-item a {
-    font-size: 16px;
+    font-size: 14px;
     color: #231f20; }
     .drop-nav-item a:hover {
       text-decoration: none; }

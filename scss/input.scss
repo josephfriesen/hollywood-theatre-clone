@@ -2,13 +2,35 @@
 @import "mixins";
 
 @font-face {
-  font-family: workGodDamnit;
+  font-family: Metropolis;
   src: url("../fonts/metropolis/Metropolis-Thin.otf");
 }
 
 body {
-  font-family: workGodDamnit;
+  font-family: Metropolis;
 }
+
+// Attempted responsive design. This did *not* go well.
+
+// @media screen and (min-width: 1200px) {
+//   .wrapper {
+//     width: $wrapper-width-lg;
+//   }
+// }
+//
+// @media screen and (max-width: 1200px) and (min-width: 1024px) {
+//   // body {
+//   //   background-color: black;
+//   // }
+//
+//   .wrapper {
+//     width: 970px;
+//   }
+//
+//   // .movie-box {
+//   //   width: (95% / 2);
+//   // }
+// }
 
 // Style rules to contain content within fixed width, the top nav bar, main content and footer will all be contained in a wrapper div
 .wrapper {
@@ -57,12 +79,12 @@ body {
 }
 
 .drop-nav-item {
-  width: 200px;
+  width: 250px;
   background-color: white;
   padding: 10px 20px;
   border: 1px solid #231f20;
   a {
-    @include grey-links(16px);
+    @include grey-links(14px);
   }
   &:hover {
     background-color: darken(white, 10%);
