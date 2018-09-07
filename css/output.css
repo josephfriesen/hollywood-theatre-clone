@@ -395,6 +395,53 @@
     .arrow a:hover {
       text-decoration: none; }
 
+.slideshow-content-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1040px;
+  height: 100%;
+  background-color: #231f20; }
+
+.slideshow-content-subpanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 520px;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px 20px; }
+  .slideshow-content-subpanel h1 {
+    color: #debb91;
+    font-size: 24px; }
+  .slideshow-content-subpanel p {
+    font-size: 16px; }
+  .slideshow-content-subpanel a {
+    font-size: 14px;
+    color: #cf815d; }
+    .slideshow-content-subpanel a:hover {
+      text-decoration: none; }
+
 .info-boxes-row {
   display: -webkit-box;
   display: -ms-flexbox;
