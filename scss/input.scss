@@ -1,10 +1,14 @@
 @import "variables";
 @import "mixins";
 
+// Style rules to contain content within fixed width, the top nav bar, main content and footer will all be contained in a wrapper div
 .wrapper {
   width: 970px;
   padding: 0 15px;
+  margin: 0 auto;
 }
+
+// Top navigation top-bar
 
 .top-bar {
   background-color: black;
@@ -18,10 +22,51 @@
   margin-left: 0;
 }
 
+// Logo header
+
 .header-bar {
   background-image: url("../img/HT_ban_bg.jpg");
   background-color: teal;
   margin-top: 69px;
   width: 100%;
   height: 155px;
+  @include flexbox(row, center, center);
+  img {
+    width: 400px;
+    height: auto;
+  }
+}
+
+// Main content
+
+#main-page-wrapper {
+  margin-top: 20px;
+}
+
+.body-flexbox {
+  @include flexbox(column, center, center);
+}
+
+.showtimes-panel {
+  @include flexbox(row, space-between, center);
+  background-color: black;
+  height: 88px;
+  width: 100%;
+  border-bottom: 10px solid black;
+}
+
+.showtimes-box {
+  @include flexbox(row, center, center);
+  width: 50%;
+  margin: 10px;
+  a {
+    @include plain-links(48px);
+  }
+}
+
+#active-box {
+  background-color: white;
+  a {
+    color: black;
+  }
 }
